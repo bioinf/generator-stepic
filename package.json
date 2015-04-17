@@ -1,0 +1,38 @@
+{
+  "name": "generator-stepic",
+  "version": "0.0.1",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "bioinf/generator-stepic",
+  "private": true,
+  "author": {
+    "name": "Artem Suschev",
+    "email": "Suschev.Artem@gmail.com",
+    "url": "https://github.com/H1D"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app",
+    "component"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "stepic"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

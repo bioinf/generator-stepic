@@ -15,7 +15,6 @@ var StepicGenerator = yeoman.generators.Base.extend({
     // replace it with a short and sweet description of your generator
     this.log(chalk.magenta('This is Stepic generator, but it\'s empty! LOL'));
     this.log(chalk.magenta('Use `yo stepic:component` to create component or do something else.'));
-    this.log(chalk.magenta('Check email, go have a drink. eh... whatever...'));
 
     var prompts = [];
 

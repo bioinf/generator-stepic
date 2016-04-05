@@ -11,7 +11,6 @@ var ComponentGenerator = yeoman.generators.Base.extend({
 
     this.on('end', function () {
       this.log('All done!');
-      this.log(chalk.yellow('Don\'t forget to add component files to one of builds (coffee/app/coffee/builds)'));
     });
   },
 
@@ -45,10 +44,9 @@ var ComponentGenerator = yeoman.generators.Base.extend({
   },
 
   files: function () {
-    var path = 'coffee/app/components/' + this.slug_name + '/';
+    var path = 'js/app/components/' + this.slug_name + '/';
     this.mkdir(path);
-    this.template('component.coffee', path + this.slug_name + '.coffee');
-    this.template('component-test.coffee', path + this.slug_name + '-test.coffee');
+    this.template('component.js', path + this.slug_name + '.js');
     this.template('style.scss', path + this.slug_name + '.scss');
     this.template('template.hbs.ignore', path + this.slug_name + '.hbs.ignore');
     fs.appendFileSync('scss/all_styles.scss', '@import "' + path + this.slug_name + '.scss";\n');
